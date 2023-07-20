@@ -6,7 +6,8 @@ on:
             - master
     schedule:
         - cron: '0 0 * * *'
-
+env:
+  TZ: 'Asia/Shanghai'  # 设置时区为中国上海
 jobs:
     build:
         runs-on: ubuntu-latest
